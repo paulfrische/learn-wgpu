@@ -1,3 +1,6 @@
+use learn_wgpu::run;
+
 fn main() {
-    println!("Hello, world!");
+    env_logger::init();
+    pollster::block_on(run());
 }
